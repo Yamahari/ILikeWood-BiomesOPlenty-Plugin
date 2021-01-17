@@ -2,15 +2,15 @@
   "replace": false,
   "values": [
     "ilikewood:cherry_torch",
-    "ilikewood:hellbark_torch",
     "ilikewood:redwood_torch",
+    "ilikewood:hellbark_torch",
     "ilikewood:dead_torch",
-    "ilikewood:fir_torch",
-    "ilikewood:palm_torch",
-    "ilikewood:mahogany_torch",
-    "ilikewood:jacaranda_torch",
     "ilikewood:magic_torch",
+    "ilikewood:umbran_torch",
+    "ilikewood:fir_torch",
+    "ilikewood:mahogany_torch",
     "ilikewood:willow_torch",
-    "ilikewood:umbran_torch"
+    "ilikewood:jacaranda_torch",
+    "ilikewood:palm_torch"
   ]
 }

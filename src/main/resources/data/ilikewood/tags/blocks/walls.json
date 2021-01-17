@@ -2,15 +2,15 @@
   "replace": false,
   "values": [
     "ilikewood:cherry_wall",
-    "ilikewood:hellbark_wall",
     "ilikewood:redwood_wall",
+    "ilikewood:hellbark_wall",
     "ilikewood:dead_wall",
-    "ilikewood:fir_wall",
-    "ilikewood:palm_wall",
-    "ilikewood:mahogany_wall",
-    "ilikewood:jacaranda_wall",
     "ilikewood:magic_wall",
+    "ilikewood:umbran_wall",
+    "ilikewood:fir_wall",
+    "ilikewood:mahogany_wall",
     "ilikewood:willow_wall",
-    "ilikewood:umbran_wall"
+    "ilikewood:jacaranda_wall",
+    "ilikewood:palm_wall"
   ]
 }
