@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomesoplenty:dead_log"
+    }
+  },
+  "result": {
+    "item": "ilikewood:dead_wall",
+    "count": 6
+  }
+}

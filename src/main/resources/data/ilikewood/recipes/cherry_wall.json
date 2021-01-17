@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomesoplenty:cherry_log"
+    }
+  },
+  "result": {
+    "item": "ilikewood:cherry_wall",
+    "count": 6
+  }
+}

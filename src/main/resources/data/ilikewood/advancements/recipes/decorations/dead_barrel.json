@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ilikewood:dead_barrel"
+    ]
+  },
+  "criteria": {
+    "has_panels": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ilikewood:dead_panels"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ilikewood:dead_barrel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_panels",
+      "has_the_recipe"
+    ]
+  ]
+}

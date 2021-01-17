@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sticks",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "ilikewood:fir_panels"
+    }
+  },
+  "result": {
+    "item": "ilikewood:fir_stick",
+    "count": 4
+  }
+}

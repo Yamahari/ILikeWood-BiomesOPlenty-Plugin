@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crafting_tables",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "ilikewood:redwood_panels"
+    }
+  },
+  "result": {
+    "item": "ilikewood:redwood_crafting_table"
+  }
+}

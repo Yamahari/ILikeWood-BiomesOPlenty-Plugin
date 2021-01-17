@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomesoplenty:redwood_log"
+    }
+  },
+  "result": {
+    "item": "ilikewood:redwood_wall",
+    "count": 6
+  }
+}

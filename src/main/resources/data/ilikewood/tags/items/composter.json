@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "ilikewood:cherry_composter",
+    "ilikewood:hellbark_composter",
+    "ilikewood:redwood_composter",
+    "ilikewood:dead_composter",
+    "ilikewood:fir_composter",
+    "ilikewood:palm_composter",
+    "ilikewood:mahogany_composter",
+    "ilikewood:jacaranda_composter",
+    "ilikewood:magic_composter",
+    "ilikewood:willow_composter",
+    "ilikewood:umbran_composter"
+  ]
+}

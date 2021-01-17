@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hoes",
+  "pattern": [
+    "##",
+    " I",
+    " I"
+  ],
+  "key": {
+    "I": {
+      "item": "ilikewood:mahogany_stick"
+    },
+    "#": {
+      "item": "ilikewood:mahogany_panels"
+    }
+  },
+  "result": {
+    "item": "ilikewood:mahogany_hoe"
+  }
+}

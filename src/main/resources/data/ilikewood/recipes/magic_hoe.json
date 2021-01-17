@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hoes",
+  "pattern": [
+    "##",
+    " I",
+    " I"
+  ],
+  "key": {
+    "I": {
+      "item": "ilikewood:magic_stick"
+    },
+    "#": {
+      "item": "ilikewood:magic_panels"
+    }
+  },
+  "result": {
+    "item": "ilikewood:magic_hoe"
+  }
+}

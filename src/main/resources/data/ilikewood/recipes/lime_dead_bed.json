@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "beds",
+  "pattern": [
+    "###",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lime_wool"
+    },
+    "X": {
+      "item": "ilikewood:dead_panels"
+    }
+  },
+  "result": {
+    "item": "ilikewood:lime_dead_bed"
+  }
+}

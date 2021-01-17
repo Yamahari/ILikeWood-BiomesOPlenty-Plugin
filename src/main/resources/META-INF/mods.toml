@@ -1,0 +1,45 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "[35,)" #mandatory
+license = "MIT"
+issueTrackerURL = "http://my.issue.tracker/" #optional
+
+[[mods]] #mandatory
+modId = "ilikewoodxbiomesoplenty" #mandatory
+version = "1.16.5-1.0.0.0" #mandatory
+displayName = "I Like Wood - Biomes o' Plenty Plugin" #mandatory
+updateJSONURL = "http://myurl.me/" #optional
+displayURL = "http://example.com/" #optional
+logoFile = "logo.png" #optional
+credits = "Yamahari and the people of Forge" #optional
+authors = "Yamahari" #optional
+description = '''
+Adds Biomes o' Plenty support for I Like Wood.
+'''
+
+[[dependencies.ilikewoodxbiomesoplenty]] #optional
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "[36,)" #mandatory
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ilikewoodxbiomesoplenty]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.5,1.17)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ilikewoodxbiomesoplenty]]
+modId = "ilikewood"
+mandatory = true
+versionRange = "[1.16.5-6.0.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+#[[dependencies.ilikewoodxbiomesoplenty]]
+#    modId="biomesoplenty"
+#    mandatory=true
+#    versionRange="[1.16.4-13.0.0.420-universal,)"
+#    ordering="NONE"
+#    side="BOTH"

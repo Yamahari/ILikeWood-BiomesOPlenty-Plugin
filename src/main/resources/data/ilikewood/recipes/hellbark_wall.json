@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomesoplenty:hellbark_log"
+    }
+  },
+  "result": {
+    "item": "ilikewood:hellbark_wall",
+    "count": 6
+  }
+}

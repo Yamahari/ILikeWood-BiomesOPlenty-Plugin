@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ilikewood:planks",
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "ilikewood:umbran_panels_slab"
+    }
+  },
+  "result": {
+    "item": "biomesoplenty:umbran_planks"
+  }
+}

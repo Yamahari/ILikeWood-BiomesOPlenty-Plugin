@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crafting_tables",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "ilikewood:umbran_panels"
+    }
+  },
+  "result": {
+    "item": "ilikewood:umbran_crafting_table"
+  }
+}

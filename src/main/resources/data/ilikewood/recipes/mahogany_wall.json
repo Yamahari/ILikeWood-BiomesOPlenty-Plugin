@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "biomesoplenty:mahogany_log"
+    }
+  },
+  "result": {
+    "item": "ilikewood:mahogany_wall",
+    "count": 6
+  }
+}
