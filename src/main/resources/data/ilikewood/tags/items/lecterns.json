@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:cherry_lectern",
     "ilikewood:redwood_lectern",
-    "ilikewood:hellbark_lectern",
-    "ilikewood:dead_lectern",
+    "ilikewood:cherry_lectern",
+    "ilikewood:palm_lectern",
     "ilikewood:magic_lectern",
-    "ilikewood:umbran_lectern",
-    "ilikewood:fir_lectern",
     "ilikewood:mahogany_lectern",
-    "ilikewood:willow_lectern",
     "ilikewood:jacaranda_lectern",
-    "ilikewood:palm_lectern"
+    "ilikewood:willow_lectern",
+    "ilikewood:fir_lectern",
+    "ilikewood:hellbark_lectern",
+    "ilikewood:umbran_lectern",
+    "ilikewood:dead_lectern"
   ]
 }

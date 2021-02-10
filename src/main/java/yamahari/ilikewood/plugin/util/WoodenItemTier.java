@@ -13,20 +13,29 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public final class WoodenItemTier implements IWoodenItemTier {
-    private static final Map<String, Float> DEFAULT_TIERED_ATTACK_SPEED = ImmutableMap.of(
-            WoodenTieredObjectType.AXE.toString(), -3.2F,
-            WoodenTieredObjectType.HOE.toString(), -3.0F,
-            WoodenTieredObjectType.PICKAXE.toString(), -2.8F,
-            WoodenTieredObjectType.SHOVEL.toString(), -3.0F,
-            WoodenTieredObjectType.SWORD.toString(), -2.4F);
+    private static final Map<String, Float> DEFAULT_TIERED_ATTACK_SPEED =
+        ImmutableMap.of(WoodenTieredObjectType.AXE.toString(),
+            -3.2F,
+            WoodenTieredObjectType.HOE.toString(),
+            -3.0F,
+            WoodenTieredObjectType.PICKAXE.toString(),
+            -2.8F,
+            WoodenTieredObjectType.SHOVEL.toString(),
+            -3.0F,
+            WoodenTieredObjectType.SWORD.toString(),
+            -2.4F);
 
-    private static final Map<String, Float> DEFAULT_TIERED_ATTACK_DAMAGE = ImmutableMap.of(
-            WoodenTieredObjectType.AXE.toString(), 6.0F,
-            WoodenTieredObjectType.HOE.toString(), 0.0F,
-            WoodenTieredObjectType.PICKAXE.toString(), 1.0F,
-            WoodenTieredObjectType.SHOVEL.toString(), 1.5F,
-            WoodenTieredObjectType.SWORD.toString(), 3.0F);
-
+    private static final Map<String, Float> DEFAULT_TIERED_ATTACK_DAMAGE =
+        ImmutableMap.of(WoodenTieredObjectType.AXE.toString(),
+            6.0F,
+            WoodenTieredObjectType.HOE.toString(),
+            0.0F,
+            WoodenTieredObjectType.PICKAXE.toString(),
+            1.0F,
+            WoodenTieredObjectType.SHOVEL.toString(),
+            1.5F,
+            WoodenTieredObjectType.SWORD.toString(),
+            3.0F);
 
     private final IWoodType woodType;
     private final String name;
@@ -41,7 +50,10 @@ public final class WoodenItemTier implements IWoodenItemTier {
         final Map<WoodenTieredObjectType, Properties> properties = new EnumMap<>(WoodenTieredObjectType.class);
         for (final WoodenTieredObjectType tieredObjectType : WoodenTieredObjectType.values()) {
             final String type = tieredObjectType.toString();
-            properties.put(tieredObjectType, new WoodenItemTier.Properties(DEFAULT_TIERED_ATTACK_SPEED.get(type), DEFAULT_TIERED_ATTACK_DAMAGE.get(type), 200));
+            properties.put(tieredObjectType,
+                new WoodenItemTier.Properties(DEFAULT_TIERED_ATTACK_SPEED.get(type),
+                    DEFAULT_TIERED_ATTACK_DAMAGE.get(type),
+                    200));
         }
         this.properties = Collections.unmodifiableMap(properties);
 

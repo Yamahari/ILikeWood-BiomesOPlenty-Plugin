@@ -29,18 +29,63 @@ public final class BiomesOPlentyWoodenResources {
     public static final Map<IWoodType, IWoodenStrippedLogResource> STRIPPED_LOGS;
     public static final Map<IWoodType, IWoodenSlabResource> SLABS;
 
-    private static final Map<IWoodType, AbstractBlock.Properties> PLANKS_PROPERTIES = new ImmutableMap.Builder<IWoodType, AbstractBlock.Properties>()
-            .put(BiomesOPlentyWoodTypes.CHERRY, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.RED).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.DEAD, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.STONE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.FIR, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.HELLBARK, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.GRAY_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.JACARANDA, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.MAGIC, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.BLUE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.MAHOGANY, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.PINK_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.PALM, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.YELLOW_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.REDWOOD, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.ORANGE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.UMBRAN, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.BLUE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
-            .put(BiomesOPlentyWoodTypes.WILLOW, AbstractBlock.Properties.create(Material.WOOD, MaterialColor.LIME_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))
+    private static final Map<IWoodType, AbstractBlock.Properties> PLANKS_PROPERTIES =
+        new ImmutableMap.Builder<IWoodType, AbstractBlock.Properties>()
+            .put(BiomesOPlentyWoodTypes.CHERRY,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.RED)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.DEAD,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.STONE)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.FIR,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.HELLBARK,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.GRAY_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.JACARANDA,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.MAGIC,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.BLUE)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.MAHOGANY,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.PINK_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.PALM,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.YELLOW_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.REDWOOD,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.ORANGE_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.UMBRAN,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.BLUE_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
+            .put(BiomesOPlentyWoodTypes.WILLOW,
+                AbstractBlock.Properties
+                    .create(Material.WOOD, MaterialColor.LIME_TERRACOTTA)
+                    .hardnessAndResistance(2.0F, 3.0F)
+                    .sound(SoundType.WOOD))
             .build();
 
     static {
@@ -50,26 +95,34 @@ public final class BiomesOPlentyWoodenResources {
         final Map<IWoodType, IWoodenSlabResource> slabs = new HashMap<>();
 
         BiomesOPlentyWoodTypes.get().forEach(woodType -> {
-            final ResourceLocation planksResource = new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName(woodType.getName(), "planks"));
-            final ResourceLocation logResource = new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName(woodType.getName(), "log"));
-            final ResourceLocation strippedLogResource = new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName("stripped", woodType.getName(), "log"));
-            final ResourceLocation slabResource = new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName(woodType.getName(), "slab"));
+            final ResourceLocation planksResource =
+                new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName(woodType.getName(), "planks"));
+            final ResourceLocation logResource =
+                new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName(woodType.getName(), "log"));
+            final ResourceLocation strippedLogResource =
+                new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName("stripped", woodType.getName(), "log"));
+            final ResourceLocation slabResource =
+                new ResourceLocation(Constants.BOP_MOD_ID, Util.toRegistryName(woodType.getName(), "slab"));
 
-            final ResourceLocation planksTexture = new ResourceLocation(planksResource.getNamespace(), Util.toPath(ModelProvider.BLOCK_FOLDER, planksResource.getPath()));
+            final ResourceLocation planksTexture = new ResourceLocation(planksResource.getNamespace(),
+                Util.toPath(ModelProvider.BLOCK_FOLDER, planksResource.getPath()));
 
-            planks.put(woodType, new WoodenPlanksResource(planksTexture, planksResource, PLANKS_PROPERTIES.get(woodType)));
+            planks.put(woodType,
+                new WoodenPlanksResource(planksTexture, planksResource, PLANKS_PROPERTIES.get(woodType)));
 
-            logs.put(woodType, new WoodenLogResource(
-                    new ResourceLocation(logResource.getNamespace(), Util.toPath(ModelProvider.BLOCK_FOLDER, Util.toRegistryName(logResource.getPath(), "top"))),
-                    new ResourceLocation(logResource.getNamespace(), Util.toPath(ModelProvider.BLOCK_FOLDER, logResource.getPath())),
-                    logResource
-            ));
+            logs.put(woodType,
+                new WoodenLogResource(new ResourceLocation(logResource.getNamespace(),
+                    Util.toPath(ModelProvider.BLOCK_FOLDER, Util.toRegistryName(logResource.getPath(), "top"))),
+                    new ResourceLocation(logResource.getNamespace(),
+                        Util.toPath(ModelProvider.BLOCK_FOLDER, logResource.getPath())),
+                    logResource));
 
-            strippedLogs.put(woodType, new WoodenStrippedLogResource(
-                    new ResourceLocation(strippedLogResource.getNamespace(), Util.toPath(ModelProvider.BLOCK_FOLDER, Util.toRegistryName(strippedLogResource.getPath(), "top"))),
-                    new ResourceLocation(strippedLogResource.getNamespace(), Util.toPath(ModelProvider.BLOCK_FOLDER, strippedLogResource.getPath())),
-                    strippedLogResource
-            ));
+            strippedLogs.put(woodType,
+                new WoodenStrippedLogResource(new ResourceLocation(strippedLogResource.getNamespace(),
+                    Util.toPath(ModelProvider.BLOCK_FOLDER, Util.toRegistryName(strippedLogResource.getPath(), "top"))),
+                    new ResourceLocation(strippedLogResource.getNamespace(),
+                        Util.toPath(ModelProvider.BLOCK_FOLDER, strippedLogResource.getPath())),
+                    strippedLogResource));
 
             slabs.put(woodType, new WoodenSlabResource(planksTexture, planksTexture, planksTexture, slabResource));
         });

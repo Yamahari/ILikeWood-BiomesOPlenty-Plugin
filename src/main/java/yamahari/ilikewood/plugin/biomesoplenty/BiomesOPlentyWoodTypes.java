@@ -23,9 +23,16 @@ public final class BiomesOPlentyWoodTypes {
     }
 
     public static Stream<IWoodType> get() {
-        return Stream.of(BiomesOPlentyWoodTypes.CHERRY, BiomesOPlentyWoodTypes.DEAD, BiomesOPlentyWoodTypes.FIR,
-                BiomesOPlentyWoodTypes.HELLBARK, BiomesOPlentyWoodTypes.JACARANDA, BiomesOPlentyWoodTypes.MAGIC,
-                BiomesOPlentyWoodTypes.MAHOGANY, BiomesOPlentyWoodTypes.PALM, BiomesOPlentyWoodTypes.REDWOOD,
-                BiomesOPlentyWoodTypes.UMBRAN, BiomesOPlentyWoodTypes.WILLOW);
+        return Stream.of(BiomesOPlentyWoodTypes.CHERRY,
+            BiomesOPlentyWoodTypes.DEAD,
+            BiomesOPlentyWoodTypes.FIR,
+            BiomesOPlentyWoodTypes.HELLBARK,
+            BiomesOPlentyWoodTypes.JACARANDA,
+            BiomesOPlentyWoodTypes.MAGIC,
+            BiomesOPlentyWoodTypes.MAHOGANY,
+            BiomesOPlentyWoodTypes.PALM,
+            BiomesOPlentyWoodTypes.REDWOOD,
+            BiomesOPlentyWoodTypes.UMBRAN,
+            BiomesOPlentyWoodTypes.WILLOW);
     }
 }

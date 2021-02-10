@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:cherry_barrel",
     "ilikewood:redwood_barrel",
-    "ilikewood:hellbark_barrel",
-    "ilikewood:dead_barrel",
+    "ilikewood:cherry_barrel",
+    "ilikewood:palm_barrel",
     "ilikewood:magic_barrel",
-    "ilikewood:umbran_barrel",
-    "ilikewood:fir_barrel",
     "ilikewood:mahogany_barrel",
-    "ilikewood:willow_barrel",
     "ilikewood:jacaranda_barrel",
-    "ilikewood:palm_barrel"
+    "ilikewood:willow_barrel",
+    "ilikewood:fir_barrel",
+    "ilikewood:hellbark_barrel",
+    "ilikewood:umbran_barrel",
+    "ilikewood:dead_barrel"
   ]
 }
