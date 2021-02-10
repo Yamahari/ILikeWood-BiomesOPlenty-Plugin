@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:redwood_scaffolding",
-    "ilikewood:cherry_scaffolding",
-    "ilikewood:palm_scaffolding",
-    "ilikewood:magic_scaffolding",
-    "ilikewood:mahogany_scaffolding",
-    "ilikewood:jacaranda_scaffolding",
-    "ilikewood:willow_scaffolding",
-    "ilikewood:fir_scaffolding",
     "ilikewood:hellbark_scaffolding",
     "ilikewood:umbran_scaffolding",
-    "ilikewood:dead_scaffolding"
+    "ilikewood:willow_scaffolding",
+    "ilikewood:fir_scaffolding",
+    "ilikewood:redwood_scaffolding",
+    "ilikewood:mahogany_scaffolding",
+    "ilikewood:palm_scaffolding",
+    "ilikewood:dead_scaffolding",
+    "ilikewood:jacaranda_scaffolding",
+    "ilikewood:magic_scaffolding",
+    "ilikewood:cherry_scaffolding"
   ]
 }

@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:redwood_bookshelf",
-    "ilikewood:cherry_bookshelf",
-    "ilikewood:palm_bookshelf",
-    "ilikewood:magic_bookshelf",
-    "ilikewood:mahogany_bookshelf",
-    "ilikewood:jacaranda_bookshelf",
-    "ilikewood:willow_bookshelf",
-    "ilikewood:fir_bookshelf",
     "ilikewood:hellbark_bookshelf",
     "ilikewood:umbran_bookshelf",
-    "ilikewood:dead_bookshelf"
+    "ilikewood:willow_bookshelf",
+    "ilikewood:fir_bookshelf",
+    "ilikewood:redwood_bookshelf",
+    "ilikewood:mahogany_bookshelf",
+    "ilikewood:palm_bookshelf",
+    "ilikewood:dead_bookshelf",
+    "ilikewood:jacaranda_bookshelf",
+    "ilikewood:magic_bookshelf",
+    "ilikewood:cherry_bookshelf"
   ]
 }

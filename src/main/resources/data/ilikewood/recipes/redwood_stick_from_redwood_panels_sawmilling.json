@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "ilikewood:redwood_panels"
+  },
+  "result": "ilikewood:redwood_stick",
+  "count": 2
+}

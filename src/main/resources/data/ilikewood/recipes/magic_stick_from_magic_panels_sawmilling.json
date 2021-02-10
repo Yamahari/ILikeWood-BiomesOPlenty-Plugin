@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "ilikewood:magic_panels"
+  },
+  "result": "ilikewood:magic_stick",
+  "count": 2
+}

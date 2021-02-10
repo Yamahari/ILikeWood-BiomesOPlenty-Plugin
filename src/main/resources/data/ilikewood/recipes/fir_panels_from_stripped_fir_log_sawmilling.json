@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:stripped_fir_log"
+  },
+  "result": "ilikewood:fir_panels",
+  "count": 4
+}

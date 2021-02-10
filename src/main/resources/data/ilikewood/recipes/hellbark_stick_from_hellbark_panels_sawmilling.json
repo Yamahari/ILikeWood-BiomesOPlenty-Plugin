@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "ilikewood:hellbark_panels"
+  },
+  "result": "ilikewood:hellbark_stick",
+  "count": 2
+}

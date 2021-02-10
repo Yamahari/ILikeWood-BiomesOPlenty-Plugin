@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:redwood_stick",
-    "ilikewood:cherry_stick",
-    "ilikewood:palm_stick",
-    "ilikewood:magic_stick",
-    "ilikewood:mahogany_stick",
-    "ilikewood:jacaranda_stick",
-    "ilikewood:willow_stick",
-    "ilikewood:fir_stick",
     "ilikewood:hellbark_stick",
     "ilikewood:umbran_stick",
-    "ilikewood:dead_stick"
+    "ilikewood:willow_stick",
+    "ilikewood:fir_stick",
+    "ilikewood:redwood_stick",
+    "ilikewood:mahogany_stick",
+    "ilikewood:palm_stick",
+    "ilikewood:dead_stick",
+    "ilikewood:jacaranda_stick",
+    "ilikewood:magic_stick",
+    "ilikewood:cherry_stick"
   ]
 }

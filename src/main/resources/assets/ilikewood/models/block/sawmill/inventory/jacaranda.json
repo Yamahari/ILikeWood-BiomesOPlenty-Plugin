@@ -1,0 +1,10 @@
+{
+  "parent": "ilikewood:block/sawmill/inventory/template",
+  "textures": {
+    "log_end": "biomesoplenty:block/jacaranda_log_top",
+    "log_side": "biomesoplenty:block/jacaranda_log",
+    "stripped_log_side": "biomesoplenty:block/stripped_jacaranda_log",
+    "planks": "biomesoplenty:block/jacaranda_planks",
+    "log_pile": "ilikewood:block/log_pile/jacaranda"
+  }
+}

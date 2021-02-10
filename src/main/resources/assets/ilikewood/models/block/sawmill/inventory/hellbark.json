@@ -1,0 +1,10 @@
+{
+  "parent": "ilikewood:block/sawmill/inventory/template",
+  "textures": {
+    "log_end": "biomesoplenty:block/hellbark_log_top",
+    "log_side": "biomesoplenty:block/hellbark_log",
+    "stripped_log_side": "biomesoplenty:block/stripped_hellbark_log",
+    "planks": "biomesoplenty:block/hellbark_planks",
+    "log_pile": "ilikewood:block/log_pile/hellbark"
+  }
+}

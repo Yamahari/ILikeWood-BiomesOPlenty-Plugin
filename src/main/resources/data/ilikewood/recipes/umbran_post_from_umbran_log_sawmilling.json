@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:umbran_log"
+  },
+  "result": "ilikewood:umbran_post",
+  "count": 2
+}

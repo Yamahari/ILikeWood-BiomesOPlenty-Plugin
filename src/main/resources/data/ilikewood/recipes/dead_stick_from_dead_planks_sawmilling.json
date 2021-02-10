@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:dead_planks"
+  },
+  "result": "ilikewood:dead_stick",
+  "count": 2
+}

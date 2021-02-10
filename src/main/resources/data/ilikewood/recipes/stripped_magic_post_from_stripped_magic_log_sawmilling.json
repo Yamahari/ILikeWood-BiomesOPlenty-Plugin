@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:stripped_magic_log"
+  },
+  "result": "ilikewood:stripped_magic_post",
+  "count": 2
+}

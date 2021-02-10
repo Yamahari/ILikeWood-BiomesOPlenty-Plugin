@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:mahogany_planks"
+  },
+  "result": "ilikewood:mahogany_panels",
+  "count": 1
+}

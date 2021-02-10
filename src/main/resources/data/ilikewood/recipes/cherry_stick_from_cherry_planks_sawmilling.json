@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:cherry_planks"
+  },
+  "result": "ilikewood:cherry_stick",
+  "count": 2
+}

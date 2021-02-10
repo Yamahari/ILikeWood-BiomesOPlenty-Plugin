@@ -1,0 +1,10 @@
+{
+  "parent": "ilikewood:block/sawmill/inventory/template",
+  "textures": {
+    "log_end": "biomesoplenty:block/dead_log_top",
+    "log_side": "biomesoplenty:block/dead_log",
+    "stripped_log_side": "biomesoplenty:block/stripped_dead_log",
+    "planks": "biomesoplenty:block/dead_planks",
+    "log_pile": "ilikewood:block/log_pile/dead"
+  }
+}

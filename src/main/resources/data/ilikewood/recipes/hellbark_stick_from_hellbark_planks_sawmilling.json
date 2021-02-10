@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:hellbark_planks"
+  },
+  "result": "ilikewood:hellbark_stick",
+  "count": 2
+}

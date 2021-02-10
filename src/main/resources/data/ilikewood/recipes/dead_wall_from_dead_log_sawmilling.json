@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:dead_log"
+  },
+  "result": "ilikewood:dead_wall",
+  "count": 1
+}

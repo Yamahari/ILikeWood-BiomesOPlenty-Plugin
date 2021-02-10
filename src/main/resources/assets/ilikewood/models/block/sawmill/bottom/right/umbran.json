@@ -1,0 +1,9 @@
+{
+  "parent": "ilikewood:block/sawmill/bottom/right/template",
+  "textures": {
+    "log_end": "biomesoplenty:block/umbran_log_top",
+    "log_side": "biomesoplenty:block/umbran_log",
+    "stripped_log_side": "biomesoplenty:block/stripped_umbran_log",
+    "log_pile": "ilikewood:block/log_pile/umbran"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:palm_log"
+  },
+  "result": "ilikewood:palm_post",
+  "count": 2
+}

@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:redwood_bow",
-    "ilikewood:cherry_bow",
-    "ilikewood:palm_bow",
-    "ilikewood:magic_bow",
-    "ilikewood:mahogany_bow",
-    "ilikewood:jacaranda_bow",
-    "ilikewood:willow_bow",
-    "ilikewood:fir_bow",
     "ilikewood:hellbark_bow",
     "ilikewood:umbran_bow",
-    "ilikewood:dead_bow"
+    "ilikewood:willow_bow",
+    "ilikewood:fir_bow",
+    "ilikewood:redwood_bow",
+    "ilikewood:mahogany_bow",
+    "ilikewood:palm_bow",
+    "ilikewood:dead_bow",
+    "ilikewood:jacaranda_bow",
+    "ilikewood:magic_bow",
+    "ilikewood:cherry_bow"
   ]
 }

@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:redwood_crafting_table",
-    "ilikewood:cherry_crafting_table",
-    "ilikewood:palm_crafting_table",
-    "ilikewood:magic_crafting_table",
-    "ilikewood:mahogany_crafting_table",
-    "ilikewood:jacaranda_crafting_table",
-    "ilikewood:willow_crafting_table",
-    "ilikewood:fir_crafting_table",
     "ilikewood:hellbark_crafting_table",
     "ilikewood:umbran_crafting_table",
-    "ilikewood:dead_crafting_table"
+    "ilikewood:willow_crafting_table",
+    "ilikewood:fir_crafting_table",
+    "ilikewood:redwood_crafting_table",
+    "ilikewood:mahogany_crafting_table",
+    "ilikewood:palm_crafting_table",
+    "ilikewood:dead_crafting_table",
+    "ilikewood:jacaranda_crafting_table",
+    "ilikewood:magic_crafting_table",
+    "ilikewood:cherry_crafting_table"
   ]
 }

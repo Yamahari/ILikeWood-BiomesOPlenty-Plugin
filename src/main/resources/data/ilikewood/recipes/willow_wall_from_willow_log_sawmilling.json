@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:willow_log"
+  },
+  "result": "ilikewood:willow_wall",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:jacaranda_log"
+  },
+  "result": "ilikewood:jacaranda_wall",
+  "count": 1
+}

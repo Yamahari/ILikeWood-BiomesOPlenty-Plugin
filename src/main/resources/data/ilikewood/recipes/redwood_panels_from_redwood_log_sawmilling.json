@@ -1,0 +1,8 @@
+{
+  "type": "ilikewood:sawmilling",
+  "ingredient": {
+    "item": "biomesoplenty:redwood_log"
+  },
+  "result": "ilikewood:redwood_panels",
+  "count": 4
+}
