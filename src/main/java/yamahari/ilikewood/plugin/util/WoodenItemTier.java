@@ -5,36 +5,37 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTier;
 import yamahari.ilikewood.registry.woodtype.IWoodType;
-import yamahari.ilikewood.util.WoodenTieredObjectType;
+import yamahari.ilikewood.util.objecttype.tiered.WoodenTieredObjectType;
+import yamahari.ilikewood.util.objecttype.tiered.WoodenTieredObjectTypes;
 
 import java.util.Collections;
-import java.util.EnumMap;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
 public final class WoodenItemTier implements IWoodenItemTier {
     private static final Map<String, Float> DEFAULT_TIERED_ATTACK_SPEED =
-        ImmutableMap.of(WoodenTieredObjectType.AXE.toString(),
+        ImmutableMap.of(WoodenTieredObjectTypes.AXE.getName(),
             -3.2F,
-            WoodenTieredObjectType.HOE.toString(),
+            WoodenTieredObjectTypes.HOE.getName(),
             -3.0F,
-            WoodenTieredObjectType.PICKAXE.toString(),
+            WoodenTieredObjectTypes.PICKAXE.getName(),
             -2.8F,
-            WoodenTieredObjectType.SHOVEL.toString(),
+            WoodenTieredObjectTypes.SHOVEL.getName(),
             -3.0F,
-            WoodenTieredObjectType.SWORD.toString(),
+            WoodenTieredObjectTypes.SWORD.getName(),
             -2.4F);
 
     private static final Map<String, Float> DEFAULT_TIERED_ATTACK_DAMAGE =
-        ImmutableMap.of(WoodenTieredObjectType.AXE.toString(),
+        ImmutableMap.of(WoodenTieredObjectTypes.AXE.getName(),
             6.0F,
-            WoodenTieredObjectType.HOE.toString(),
+            WoodenTieredObjectTypes.HOE.getName(),
             0.0F,
-            WoodenTieredObjectType.PICKAXE.toString(),
+            WoodenTieredObjectTypes.PICKAXE.getName(),
             1.0F,
-            WoodenTieredObjectType.SHOVEL.toString(),
+            WoodenTieredObjectTypes.SHOVEL.getName(),
             1.5F,
-            WoodenTieredObjectType.SWORD.toString(),
+            WoodenTieredObjectTypes.SWORD.getName(),
             3.0F);
 
     private final IWoodType woodType;
@@ -47,14 +48,14 @@ public final class WoodenItemTier implements IWoodenItemTier {
         this.name = name;
         this.repairMaterial = new LazyValue<>(repairMaterial);
 
-        final Map<WoodenTieredObjectType, Properties> properties = new EnumMap<>(WoodenTieredObjectType.class);
-        for (final WoodenTieredObjectType tieredObjectType : WoodenTieredObjectType.values()) {
-            final String type = tieredObjectType.toString();
+        final Map<WoodenTieredObjectType, Properties> properties = new HashMap<>();
+        WoodenTieredObjectTypes.get().forEach(tieredObjectType -> {
+            final String type = tieredObjectType.getName();
             properties.put(tieredObjectType,
                 new WoodenItemTier.Properties(DEFAULT_TIERED_ATTACK_SPEED.get(type),
                     DEFAULT_TIERED_ATTACK_DAMAGE.get(type),
                     200));
-        }
+        });
         this.properties = Collections.unmodifiableMap(properties);
 
     }

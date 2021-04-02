@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:hellbark_wall_torch",
-    "ilikewood:umbran_wall_torch",
-    "ilikewood:willow_wall_torch",
-    "ilikewood:fir_wall_torch",
-    "ilikewood:redwood_wall_torch",
-    "ilikewood:mahogany_wall_torch",
     "ilikewood:palm_wall_torch",
     "ilikewood:dead_wall_torch",
-    "ilikewood:jacaranda_wall_torch",
+    "ilikewood:mahogany_wall_torch",
+    "ilikewood:umbran_wall_torch",
     "ilikewood:magic_wall_torch",
-    "ilikewood:cherry_wall_torch"
+    "ilikewood:willow_wall_torch",
+    "ilikewood:cherry_wall_torch",
+    "ilikewood:fir_wall_torch",
+    "ilikewood:redwood_wall_torch",
+    "ilikewood:hellbark_wall_torch",
+    "ilikewood:jacaranda_wall_torch"
   ]
 }

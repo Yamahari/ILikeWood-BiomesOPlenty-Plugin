@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:hellbark_crossbow",
-    "ilikewood:umbran_crossbow",
-    "ilikewood:willow_crossbow",
-    "ilikewood:fir_crossbow",
-    "ilikewood:redwood_crossbow",
-    "ilikewood:mahogany_crossbow",
     "ilikewood:palm_crossbow",
     "ilikewood:dead_crossbow",
-    "ilikewood:jacaranda_crossbow",
+    "ilikewood:mahogany_crossbow",
+    "ilikewood:umbran_crossbow",
     "ilikewood:magic_crossbow",
-    "ilikewood:cherry_crossbow"
+    "ilikewood:willow_crossbow",
+    "ilikewood:cherry_crossbow",
+    "ilikewood:fir_crossbow",
+    "ilikewood:redwood_crossbow",
+    "ilikewood:hellbark_crossbow",
+    "ilikewood:jacaranda_crossbow"
   ]
 }

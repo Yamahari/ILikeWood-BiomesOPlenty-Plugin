@@ -1,0 +1,6 @@
+{
+  "parent": "ilikewood:item/redwood_fishing_rod",
+  "textures": {
+    "layer0": "ilikewood:item/fishing_rod/cast/redwood"
+  }
+}

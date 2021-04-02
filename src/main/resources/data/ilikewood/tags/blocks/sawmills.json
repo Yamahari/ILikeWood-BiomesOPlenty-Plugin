@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:hellbark_sawmill",
-    "ilikewood:umbran_sawmill",
-    "ilikewood:willow_sawmill",
-    "ilikewood:fir_sawmill",
-    "ilikewood:redwood_sawmill",
-    "ilikewood:mahogany_sawmill",
     "ilikewood:palm_sawmill",
     "ilikewood:dead_sawmill",
-    "ilikewood:jacaranda_sawmill",
+    "ilikewood:mahogany_sawmill",
+    "ilikewood:umbran_sawmill",
     "ilikewood:magic_sawmill",
-    "ilikewood:cherry_sawmill"
+    "ilikewood:willow_sawmill",
+    "ilikewood:cherry_sawmill",
+    "ilikewood:fir_sawmill",
+    "ilikewood:redwood_sawmill",
+    "ilikewood:hellbark_sawmill",
+    "ilikewood:jacaranda_sawmill"
   ]
 }

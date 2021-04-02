@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:hellbark_panels_slab",
-    "ilikewood:umbran_panels_slab",
-    "ilikewood:willow_panels_slab",
-    "ilikewood:fir_panels_slab",
-    "ilikewood:redwood_panels_slab",
-    "ilikewood:mahogany_panels_slab",
     "ilikewood:palm_panels_slab",
     "ilikewood:dead_panels_slab",
-    "ilikewood:jacaranda_panels_slab",
+    "ilikewood:mahogany_panels_slab",
+    "ilikewood:umbran_panels_slab",
     "ilikewood:magic_panels_slab",
-    "ilikewood:cherry_panels_slab"
+    "ilikewood:willow_panels_slab",
+    "ilikewood:cherry_panels_slab",
+    "ilikewood:fir_panels_slab",
+    "ilikewood:redwood_panels_slab",
+    "ilikewood:hellbark_panels_slab",
+    "ilikewood:jacaranda_panels_slab"
   ]
 }
