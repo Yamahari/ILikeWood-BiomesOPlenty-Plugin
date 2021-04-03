@@ -43,6 +43,7 @@ public class WoodType implements IWoodType {
                 WoodenObjectTypes.STAIRS,
                 WoodenObjectTypes.BOW,
                 WoodenObjectTypes.CROSSBOW,
+                WoodenObjectTypes.SAWMILL,
                 WoodenObjectTypes.FISHING_ROD)
             .forEach(woodenObjectType -> properties.put(woodenObjectType, new Properties(300)));
 
