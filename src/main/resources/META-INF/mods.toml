@@ -5,7 +5,7 @@ issueTrackerURL = "https://github.com/Yamahari/ILikeWood-BiomesOPlenty-Plugin/is
 
 [[mods]] #mandatory
 modId = "ilikewoodxbiomesoplenty" #mandatory
-version = "1.16.5-6.2.2.0" #mandatory
+version = "1.16.5-6.2.2.1" #mandatory
 displayName = "I Like Wood - Biomes o' Plenty Plugin" #mandatory
 updateJSONURL = "http://myurl.me/" #optional
 displayURL = "http://example.com/" #optional
