@@ -1,4 +1,4 @@
-package yamahari.ilikewood.plugin.util;
+package yamahari.ilikewood.plugin.biomesoplenty.util;
 
 import yamahari.ilikewood.registry.woodtype.IWoodType;
 import yamahari.ilikewood.util.objecttype.WoodenObjectType;

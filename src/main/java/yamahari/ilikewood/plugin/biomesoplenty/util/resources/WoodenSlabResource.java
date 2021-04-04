@@ -1,4 +1,4 @@
-package yamahari.ilikewood.plugin.util.resources;
+package yamahari.ilikewood.plugin.biomesoplenty.util.resources;
 
 import net.minecraft.util.ResourceLocation;
 import yamahari.ilikewood.registry.resource.resources.IWoodenSlabResource;

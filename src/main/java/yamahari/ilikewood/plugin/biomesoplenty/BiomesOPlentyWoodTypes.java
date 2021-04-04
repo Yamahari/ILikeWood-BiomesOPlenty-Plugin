@@ -1,7 +1,7 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
-import yamahari.ilikewood.plugin.util.Constants;
-import yamahari.ilikewood.plugin.util.WoodType;
+import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
+import yamahari.ilikewood.plugin.biomesoplenty.util.WoodType;
 import yamahari.ilikewood.registry.woodtype.IWoodType;
 
 import java.util.stream.Stream;

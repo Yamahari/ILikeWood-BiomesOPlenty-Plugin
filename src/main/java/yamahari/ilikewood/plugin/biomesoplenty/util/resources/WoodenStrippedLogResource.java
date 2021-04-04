@@ -1,15 +1,15 @@
-package yamahari.ilikewood.plugin.util.resources;
+package yamahari.ilikewood.plugin.biomesoplenty.util.resources;
 
 import net.minecraft.util.ResourceLocation;
-import yamahari.ilikewood.registry.resource.resources.IWoodenLogResource;
+import yamahari.ilikewood.registry.resource.resources.IWoodenStrippedLogResource;
 
-public final class WoodenLogResource implements IWoodenLogResource {
+public final class WoodenStrippedLogResource implements IWoodenStrippedLogResource {
     private final ResourceLocation endTexture;
     private final ResourceLocation sideTexture;
     private final ResourceLocation resource;
 
-    public WoodenLogResource(final ResourceLocation endTexture, final ResourceLocation sideTexture,
-                             final ResourceLocation resource) {
+    public WoodenStrippedLogResource(final ResourceLocation endTexture, final ResourceLocation sideTexture,
+                                     final ResourceLocation resource) {
         this.endTexture = endTexture;
         this.sideTexture = sideTexture;
         this.resource = resource;

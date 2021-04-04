@@ -1,4 +1,4 @@
-package yamahari.ilikewood.plugin.util;
+package yamahari.ilikewood.plugin.biomesoplenty.util;
 
 public final class Constants {
     public static final String MOD_ID = "ilikewoodxbiomesoplenty";

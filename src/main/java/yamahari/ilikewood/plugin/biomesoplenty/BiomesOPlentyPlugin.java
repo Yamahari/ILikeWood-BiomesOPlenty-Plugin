@@ -2,7 +2,7 @@ package yamahari.ilikewood.plugin.biomesoplenty;
 
 import yamahari.ilikewood.ILikeWoodPlugin;
 import yamahari.ilikewood.IModPlugin;
-import yamahari.ilikewood.plugin.util.Constants;
+import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
 import yamahari.ilikewood.registry.resource.IWoodenResourceRegistry;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTierRegistry;
 import yamahari.ilikewood.registry.woodtype.IWoodTypeRegistry;

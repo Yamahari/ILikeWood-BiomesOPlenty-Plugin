@@ -1,8 +1,8 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
 import net.minecraft.item.crafting.Ingredient;
-import yamahari.ilikewood.plugin.util.Constants;
-import yamahari.ilikewood.plugin.util.WoodenItemTier;
+import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
+import yamahari.ilikewood.plugin.biomesoplenty.util.WoodenItemTier;
 import yamahari.ilikewood.registry.WoodenBlocks;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTier;
 import yamahari.ilikewood.util.objecttype.WoodenObjectTypes;

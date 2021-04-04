@@ -1,4 +1,4 @@
-package yamahari.ilikewood.plugin.util;
+package yamahari.ilikewood.plugin.biomesoplenty.util;
 
 import org.apache.commons.lang3.StringUtils;
 

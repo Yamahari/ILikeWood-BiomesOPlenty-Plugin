@@ -1,4 +1,4 @@
-package yamahari.ilikewood.plugin.util;
+package yamahari.ilikewood.plugin.biomesoplenty.util;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.item.crafting.Ingredient;
