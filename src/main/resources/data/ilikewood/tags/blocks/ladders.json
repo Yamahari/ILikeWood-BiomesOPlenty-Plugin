@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:palm_ladder",
-    "ilikewood:dead_ladder",
-    "ilikewood:mahogany_ladder",
-    "ilikewood:umbran_ladder",
-    "ilikewood:magic_ladder",
-    "ilikewood:willow_ladder",
     "ilikewood:cherry_ladder",
-    "ilikewood:fir_ladder",
-    "ilikewood:redwood_ladder",
+    "ilikewood:magic_ladder",
+    "ilikewood:palm_ladder",
     "ilikewood:hellbark_ladder",
+    "ilikewood:mahogany_ladder",
+    "ilikewood:redwood_ladder",
+    "ilikewood:dead_ladder",
+    "ilikewood:fir_ladder",
+    "ilikewood:umbran_ladder",
+    "ilikewood:willow_ladder",
     "ilikewood:jacaranda_ladder"
   ]
 }

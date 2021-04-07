@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:palm_item_frame",
-    "ilikewood:dead_item_frame",
-    "ilikewood:mahogany_item_frame",
-    "ilikewood:umbran_item_frame",
-    "ilikewood:magic_item_frame",
-    "ilikewood:willow_item_frame",
     "ilikewood:cherry_item_frame",
-    "ilikewood:fir_item_frame",
-    "ilikewood:redwood_item_frame",
+    "ilikewood:magic_item_frame",
+    "ilikewood:palm_item_frame",
     "ilikewood:hellbark_item_frame",
+    "ilikewood:mahogany_item_frame",
+    "ilikewood:redwood_item_frame",
+    "ilikewood:dead_item_frame",
+    "ilikewood:fir_item_frame",
+    "ilikewood:umbran_item_frame",
+    "ilikewood:willow_item_frame",
     "ilikewood:jacaranda_item_frame"
   ]
 }

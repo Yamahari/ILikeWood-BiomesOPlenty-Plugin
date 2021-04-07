@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:palm_chest",
-    "ilikewood:dead_chest",
-    "ilikewood:mahogany_chest",
-    "ilikewood:umbran_chest",
-    "ilikewood:magic_chest",
-    "ilikewood:willow_chest",
     "ilikewood:cherry_chest",
-    "ilikewood:fir_chest",
-    "ilikewood:redwood_chest",
+    "ilikewood:magic_chest",
+    "ilikewood:palm_chest",
     "ilikewood:hellbark_chest",
+    "ilikewood:mahogany_chest",
+    "ilikewood:redwood_chest",
+    "ilikewood:dead_chest",
+    "ilikewood:fir_chest",
+    "ilikewood:umbran_chest",
+    "ilikewood:willow_chest",
     "ilikewood:jacaranda_chest"
   ]
 }

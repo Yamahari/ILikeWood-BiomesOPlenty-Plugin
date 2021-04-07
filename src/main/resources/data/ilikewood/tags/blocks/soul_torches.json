@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ilikewood:palm_soul_torch",
-    "ilikewood:dead_soul_torch",
-    "ilikewood:mahogany_soul_torch",
-    "ilikewood:umbran_soul_torch",
-    "ilikewood:magic_soul_torch",
-    "ilikewood:willow_soul_torch",
     "ilikewood:cherry_soul_torch",
-    "ilikewood:fir_soul_torch",
-    "ilikewood:redwood_soul_torch",
+    "ilikewood:magic_soul_torch",
+    "ilikewood:palm_soul_torch",
     "ilikewood:hellbark_soul_torch",
+    "ilikewood:mahogany_soul_torch",
+    "ilikewood:redwood_soul_torch",
+    "ilikewood:dead_soul_torch",
+    "ilikewood:fir_soul_torch",
+    "ilikewood:umbran_soul_torch",
+    "ilikewood:willow_soul_torch",
     "ilikewood:jacaranda_soul_torch"
   ]
 }
