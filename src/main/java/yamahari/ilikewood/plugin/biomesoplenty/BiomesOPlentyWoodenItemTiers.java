@@ -2,46 +2,31 @@ package yamahari.ilikewood.plugin.biomesoplenty;
 
 import net.minecraft.item.crafting.Ingredient;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
-import yamahari.ilikewood.plugin.biomesoplenty.util.WoodenItemTier;
-import yamahari.ilikewood.registry.WoodenBlocks;
+import yamahari.ilikewood.registry.objecttype.WoodenBlockType;
+import yamahari.ilikewood.registry.woodenitemtier.DefaultWoodenItemTier;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTier;
-import yamahari.ilikewood.util.objecttype.WoodenObjectTypes;
+import yamahari.ilikewood.registry.woodtype.IWoodType;
 
 public final class BiomesOPlentyWoodenItemTiers {
-    public static final IWoodenItemTier CHERRY = new WoodenItemTier(BiomesOPlentyWoodTypes.CHERRY,
-        Constants.CHERRY,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.CHERRY)));
-    public static final IWoodenItemTier DEAD = new WoodenItemTier(BiomesOPlentyWoodTypes.DEAD,
-        Constants.DEAD,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.DEAD)));
-    public static final IWoodenItemTier FIR = new WoodenItemTier(BiomesOPlentyWoodTypes.FIR,
-        Constants.FIR,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.FIR)));
-    public static final IWoodenItemTier HELLBARK = new WoodenItemTier(BiomesOPlentyWoodTypes.HELLBARK,
-        Constants.HELLBARK,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.HELLBARK)));
-    public static final IWoodenItemTier JACARANDA = new WoodenItemTier(BiomesOPlentyWoodTypes.JACARANDA,
-        Constants.JACARANDA,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.JACARANDA)));
-    public static final IWoodenItemTier MAGIC = new WoodenItemTier(BiomesOPlentyWoodTypes.MAGIC,
-        Constants.MAGIC,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.MAGIC)));
-    public static final IWoodenItemTier MAHOGANY = new WoodenItemTier(BiomesOPlentyWoodTypes.MAHOGANY,
-        Constants.MAHOGANY,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.MAHOGANY)));
-    public static final IWoodenItemTier PALM = new WoodenItemTier(BiomesOPlentyWoodTypes.PALM,
-        Constants.PALM,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.PALM)));
-    public static final IWoodenItemTier REDWOOD = new WoodenItemTier(BiomesOPlentyWoodTypes.REDWOOD,
-        Constants.REDWOOD,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.REDWOOD)));
-    public static final IWoodenItemTier UMBRAN = new WoodenItemTier(BiomesOPlentyWoodTypes.UMBRAN,
-        Constants.UMBRAN,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.UMBRAN)));
-    public static final IWoodenItemTier WILLOW = new WoodenItemTier(BiomesOPlentyWoodTypes.WILLOW,
-        Constants.WILLOW,
-        () -> Ingredient.fromItems(WoodenBlocks.getBlock(WoodenObjectTypes.PANELS, BiomesOPlentyWoodTypes.WILLOW)));
+    public static final IWoodenItemTier CHERRY = makeItemTier(BiomesOPlentyWoodTypes.CHERRY, Constants.CHERRY);
+    public static final IWoodenItemTier DEAD = makeItemTier(BiomesOPlentyWoodTypes.DEAD, Constants.DEAD);
+    public static final IWoodenItemTier FIR = makeItemTier(BiomesOPlentyWoodTypes.FIR, Constants.FIR);
+    public static final IWoodenItemTier HELLBARK = makeItemTier(BiomesOPlentyWoodTypes.HELLBARK, Constants.HELLBARK);
+    public static final IWoodenItemTier JACARANDA = makeItemTier(BiomesOPlentyWoodTypes.JACARANDA, Constants.JACARANDA);
+    public static final IWoodenItemTier MAGIC = makeItemTier(BiomesOPlentyWoodTypes.MAGIC, Constants.MAGIC);
+    public static final IWoodenItemTier MAHOGANY = makeItemTier(BiomesOPlentyWoodTypes.MAHOGANY, Constants.MAHOGANY);
+    public static final IWoodenItemTier PALM = makeItemTier(BiomesOPlentyWoodTypes.PALM, Constants.PALM);
+    public static final IWoodenItemTier REDWOOD = makeItemTier(BiomesOPlentyWoodTypes.REDWOOD, Constants.REDWOOD);
+    public static final IWoodenItemTier UMBRAN = makeItemTier(BiomesOPlentyWoodTypes.UMBRAN, Constants.UMBRAN);
+    public static final IWoodenItemTier WILLOW = makeItemTier(BiomesOPlentyWoodTypes.WILLOW, Constants.WILLOW);
 
     private BiomesOPlentyWoodenItemTiers() {
+    }
+
+    private static IWoodenItemTier makeItemTier(final IWoodType woodType, final String name) {
+        return new DefaultWoodenItemTier(woodType,
+            Constants.BOP_MOD_ID,
+            name,
+            () -> Ingredient.fromItems(BiomesOPlentyPlugin.BLOCK_REGISTRY.getObject(woodType, WoodenBlockType.PANELS)));
     }
 }

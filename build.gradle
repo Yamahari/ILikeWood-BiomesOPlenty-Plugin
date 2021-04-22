@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.16.5-6.2.3.0'
+version = '1.16.5-6.3.0.0'
 group = 'yamahari.ilikewoodxbiomesoplenty' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ilikewoodxbiomesoplenty'
 
@@ -27,17 +27,24 @@ repositories {
     }
 }
 
+sourceSets {
+    main {
+        java{
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources', 'src/data/resources']
+        }
+    }
+}
+
+
 processResources {
     copy {
-        from ('src/generated/resources') {
-            exclude 'assets/ilikewood/lang'
-        }
-        into 'src/main/resources'
+        from 'src/data/resources/assets/ilikewood/lang'
+        into 'src/data/resources/assets/ilikewoodxbiomesoplenty/lang'
     }
-    copy {
-        from 'src/generated/resources/assets/ilikewood/lang'
-        into 'src/main/resources/assets/ilikewoodxbiomesoplenty/lang'
-    }
+    delete 'src/data/resources/assets/ilikewood/lang'
 }
 
 configurations {
@@ -48,16 +55,17 @@ configurations {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
 
-    compileOnly fg.deobf('build.libs:ilikewood:1.16.5-6.2.3.0:api')
+    compileOnly fg.deobf('build.libs:ilikewood:1.16.5-6.3.0.0:api')
 
-    ilikewood fg.deobf('build.libs:ilikewood:1.16.5-6.2.3.0')
+    ilikewood fg.deobf('build.libs:ilikewood:1.16.5-6.3.0.0')
+
     runtimeOnly fg.deobf('build.libs:BiomesOPlenty:1.16.4-13.0.0.432:universal')
 }
 
 minecraft {
     mappings channel: 'snapshot', version: '20201028-1.16.3'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
+
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
@@ -92,7 +100,7 @@ minecraft {
             property 'ilikewood.datagen.modid', 'biomesoplenty'
             args '--mod', 'ilikewood',
                     '--all',
-                    '--output', file('src/generated/resources/'),
+                    '--output', file('src/data/resources/'),
                     '--existing', file('src/main/resources/'),
                     '--existing', configurations.ilikewood.asPath
 
@@ -111,20 +119,20 @@ jar {
     }
     manifest {
         attributes([
-            "Specification-Title": "ilikewoodxbiomesoplenty",
-            "Specification-Vendor": "yamahari",
-            "Specification-Version": "${version}",
-            "Implementation-Title": "ilikewoodxbiomesoplenty",
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"yamahari",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Specification-Title"     : "ilikewoodxbiomesoplenty",
+                "Specification-Vendor"    : "yamahari",
+                "Specification-Version"   : "${version}",
+                "Implementation-Title"    : "ilikewoodxbiomesoplenty",
+                "Implementation-Version"  : "${version}",
+                "Implementation-Vendor"   : "yamahari",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }
 
 // Example configuration to allow publishing using the maven-publish task
 // This is the preferred method to reobfuscate your jar file
-jar.finalizedBy('reobfJar') 
+jar.finalizedBy('reobfJar')
 // However if you are in a multi-project build, dev time needs unobfed jar files, so you can delay the obfuscation until publishing by doing
 //publish.dependsOn('reobfJar')
 

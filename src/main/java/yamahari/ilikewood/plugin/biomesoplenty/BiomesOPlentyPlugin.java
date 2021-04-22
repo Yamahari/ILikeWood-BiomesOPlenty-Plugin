@@ -1,14 +1,19 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
+import net.minecraft.block.Block;
 import yamahari.ilikewood.ILikeWoodPlugin;
 import yamahari.ilikewood.IModPlugin;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
+import yamahari.ilikewood.registry.IWoodenObjectRegistry;
+import yamahari.ilikewood.registry.objecttype.WoodenBlockType;
 import yamahari.ilikewood.registry.resource.IWoodenResourceRegistry;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTierRegistry;
 import yamahari.ilikewood.registry.woodtype.IWoodTypeRegistry;
 
 @ILikeWoodPlugin
 public final class BiomesOPlentyPlugin implements IModPlugin {
+    public static IWoodenObjectRegistry<Block, WoodenBlockType> BLOCK_REGISTRY;
+
     @Override
     public String getModId() {
         return Constants.BOP_MOD_ID;
@@ -42,5 +47,10 @@ public final class BiomesOPlentyPlugin implements IModPlugin {
             registry.registerStrippedLogResource(woodType, BiomesOPlentyWoodenResources.STRIPPED_LOGS.get(woodType));
             registry.registerSlabResource(woodType, BiomesOPlentyWoodenResources.SLABS.get(woodType));
         });
+    }
+
+    @Override
+    public void acceptBlockRegistry(final IWoodenObjectRegistry<Block, WoodenBlockType> registry) {
+        BLOCK_REGISTRY = registry;
     }
 }
