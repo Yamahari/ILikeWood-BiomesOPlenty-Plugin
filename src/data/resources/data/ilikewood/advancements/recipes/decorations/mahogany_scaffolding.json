@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ilikewood:mahogany_stick"
+            "items": [
+              "ilikewood:mahogany_stick"
+            ]
           }
         ]
       }

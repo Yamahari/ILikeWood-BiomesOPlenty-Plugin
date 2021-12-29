@@ -1,11 +1,11 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
 import com.google.common.collect.ImmutableMap;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.client.model.generators.ModelProvider;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Util;
@@ -29,62 +29,62 @@ public final class BiomesOPlentyWoodenResources {
     public static final Map<IWoodType, IWoodenStrippedLogResource> STRIPPED_LOGS;
     public static final Map<IWoodType, IWoodenSlabResource> SLABS;
 
-    private static final Map<IWoodType, AbstractBlock.Properties> PLANKS_PROPERTIES =
-        new ImmutableMap.Builder<IWoodType, AbstractBlock.Properties>()
+    private static final Map<IWoodType, BlockBehaviour.Properties> PLANKS_PROPERTIES =
+        new ImmutableMap.Builder<IWoodType, BlockBehaviour.Properties>()
             .put(BiomesOPlentyWoodTypes.CHERRY,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.RED)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.COLOR_RED)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.DEAD,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.STONE)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.STONE)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.FIR,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_WHITE)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.HELLBARK,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.GRAY_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_GRAY)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.JACARANDA,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_WHITE)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.MAGIC,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.BLUE)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.COLOR_BLUE)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.MAHOGANY,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.PINK_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_PINK)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.PALM,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.YELLOW_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_YELLOW)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.REDWOOD,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.ORANGE_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_ORANGE)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.UMBRAN,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.BLUE_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_BLUE)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .put(BiomesOPlentyWoodTypes.WILLOW,
-                AbstractBlock.Properties
-                    .create(Material.WOOD, MaterialColor.LIME_TERRACOTTA)
-                    .hardnessAndResistance(2.0F, 3.0F)
+                BlockBehaviour.Properties
+                    .of(Material.WOOD, MaterialColor.TERRACOTTA_LIGHT_GREEN)
+                    .strength(2.0F, 3.0F)
                     .sound(SoundType.WOOD))
             .build();
 

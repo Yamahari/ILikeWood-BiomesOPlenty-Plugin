@@ -1,6 +1,6 @@
 package yamahari.ilikewood.plugin.biomesoplenty.util.resources;
 
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 import yamahari.ilikewood.registry.resource.resources.IWoodenSlabResource;
 
 public final class WoodenSlabResource implements IWoodenSlabResource {

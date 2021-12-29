@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ilikewood:hellbark_stick"
+            "items": [
+              "ilikewood:hellbark_stick"
+            ]
           }
         ]
       }

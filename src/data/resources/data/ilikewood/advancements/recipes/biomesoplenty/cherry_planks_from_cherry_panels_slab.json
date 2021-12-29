@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ilikewood:cherry_panels_slab"
+            "items": [
+              "ilikewood:cherry_panels_slab"
+            ]
           }
         ]
       }

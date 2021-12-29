@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ilikewood:fir_stick"
+            "items": [
+              "ilikewood:fir_stick"
+            ]
           }
         ]
       }

@@ -1,6 +1,6 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
-import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Ingredient;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
 import yamahari.ilikewood.registry.objecttype.WoodenBlockType;
 import yamahari.ilikewood.registry.woodenitemtier.DefaultWoodenItemTier;
@@ -27,6 +27,6 @@ public final class BiomesOPlentyWoodenItemTiers {
         return new DefaultWoodenItemTier(woodType,
             Constants.BOP_MOD_ID,
             name,
-            () -> Ingredient.fromItems(BiomesOPlentyPlugin.BLOCK_REGISTRY.getObject(woodType, WoodenBlockType.PANELS)));
+            () -> Ingredient.of(BiomesOPlentyPlugin.BLOCK_REGISTRY.getObject(woodType, WoodenBlockType.PANELS)));
     }
 }

@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ilikewood:palm_panels_slab"
+            "items": [
+              "ilikewood:palm_panels_slab"
+            ]
           }
         ]
       }

@@ -1,11 +1,11 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
+        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
+        maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -13,13 +13,11 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.16.5-6.3.0.0'
+version = "${mc_version}-7.0.0.0"
 group = 'yamahari.ilikewoodxbiomesoplenty' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ilikewoodxbiomesoplenty'
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
-
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     flatDir {
@@ -53,20 +51,17 @@ configurations {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
+    minecraft "net.minecraftforge:forge:${mc_version}-${fg_version}"
 
-    compileOnly fg.deobf('build.libs:ilikewood:1.16.5-6.3.0.0:api')
+    compileOnly fg.deobf("build.libs:ilikewood:${mc_version}-${ilw_version}:api")
 
-    ilikewood fg.deobf('build.libs:ilikewood:1.16.5-6.3.0.0')
+    ilikewood fg.deobf("build.libs:ilikewood:${mc_version}-${ilw_version}")
 
-    runtimeOnly fg.deobf('build.libs:BiomesOPlenty:1.16.4-13.0.0.432:universal')
+    runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${mc_version}-${bop_version}:universal")
 }
 
 minecraft {
-    mappings channel: 'snapshot', version: '20201028-1.16.3'
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    mappings channel: 'official', version: "${mc_version}"
 
     runs {
         client {
@@ -116,6 +111,7 @@ minecraft {
 jar {
     sourceSets.main.resources {
         exclude 'assets/biomesoplenty/**'
+        exclude '.cache'
     }
     manifest {
         attributes([
@@ -128,23 +124,6 @@ jar {
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
-}
 
-// Example configuration to allow publishing using the maven-publish task
-// This is the preferred method to reobfuscate your jar file
-jar.finalizedBy('reobfJar')
-// However if you are in a multi-project build, dev time needs unobfed jar files, so you can delay the obfuscation until publishing by doing
-//publish.dependsOn('reobfJar')
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
-        }
-    }
+    finalizedBy 'reobfJar'
 }

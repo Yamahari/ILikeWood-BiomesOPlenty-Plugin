@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "item": "ilikewood:mahogany_panels"
+            "items": [
+              "ilikewood:mahogany_panels"
+            ]
           }
         ]
       }

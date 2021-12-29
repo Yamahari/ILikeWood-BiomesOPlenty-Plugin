@@ -1,6 +1,6 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.Block;
 import yamahari.ilikewood.ILikeWoodPlugin;
 import yamahari.ilikewood.IModPlugin;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
