@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:stripped_umbran_log"
-  },
-  "result": "ilikewood:umbran_panels",
-  "count": 4
-}

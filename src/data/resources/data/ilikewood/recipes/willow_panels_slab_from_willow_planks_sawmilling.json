@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:willow_planks"
-  },
-  "result": "ilikewood:willow_panels_slab",
-  "count": 2
-}

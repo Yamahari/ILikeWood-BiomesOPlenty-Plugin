@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:magic_planks"
-  },
-  "result": "ilikewood:magic_panels_slab",
-  "count": 2
-}

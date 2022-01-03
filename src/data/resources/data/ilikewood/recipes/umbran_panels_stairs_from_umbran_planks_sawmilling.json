@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:umbran_planks"
-  },
-  "result": "ilikewood:umbran_panels_stairs",
-  "count": 1
-}

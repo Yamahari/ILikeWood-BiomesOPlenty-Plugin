@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:mahogany_log"
-  },
-  "result": "ilikewood:mahogany_post",
-  "count": 2
-}

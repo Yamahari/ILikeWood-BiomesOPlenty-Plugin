@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:redwood_planks"
-  },
-  "result": "ilikewood:redwood_panels_stairs",
-  "count": 1
-}

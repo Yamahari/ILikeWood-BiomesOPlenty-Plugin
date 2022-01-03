@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "${mc_version}-7.0.0.1"
+version = "${version_mc}-${version_major}.${version_minor}.${version_patch}"
 group = 'yamahari.ilikewoodxbiomesoplenty' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ilikewoodxbiomesoplenty'
 
@@ -36,6 +36,19 @@ sourceSets {
     }
 }
 
+def replaceVersions = tasks.register('replaceVersions', Copy) {
+    it.outputs.upToDateWhen { false }
+    it.from(sourceSets.main.resources) {
+        include 'META-INF/mods.toml'
+        expand 'version': version,
+                'version_range_mc': version_range_mc,
+                'version_range_loader':  version_range_loader,
+                'version_range_forge': version_range_forge,
+                'version_range_ilw': version_range_ilw,
+                'version_range_bop': version_range_bop
+    }
+    it.into "$buildDir/resources/main/"
+}
 
 processResources {
     copy {
@@ -43,6 +56,14 @@ processResources {
         into 'src/data/resources/assets/ilikewoodxbiomesoplenty/lang'
     }
     delete 'src/data/resources/assets/ilikewood/lang'
+    exclude 'META-INF/mods.toml'
+    configure {
+        finalizedBy replaceVersions
+    }
+}
+
+classes.configure {
+    dependsOn(replaceVersions)
 }
 
 configurations {
@@ -51,17 +72,17 @@ configurations {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${mc_version}-${fg_version}"
+    minecraft "net.minecraftforge:forge:${version_mc}-${version_forge}"
 
-    compileOnly fg.deobf("build.libs:ilikewood:${mc_version}-${ilw_version}:api")
+    compileOnly fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}:api")
 
-    ilikewood fg.deobf("build.libs:ilikewood:${mc_version}-${ilw_version}")
+    ilikewood fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}")
 
-    runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${mc_version}-${bop_version}:universal")
+    runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${version_mc}-${version_bop}:universal")
 }
 
 minecraft {
-    mappings channel: 'official', version: "${mc_version}"
+    mappings channel: 'official', version: "${version_mc}"
 
     runs {
         client {
@@ -117,9 +138,9 @@ jar {
         attributes([
                 "Specification-Title"     : "ilikewoodxbiomesoplenty",
                 "Specification-Vendor"    : "yamahari",
-                "Specification-Version"   : "${version}",
+                "Specification-Version"   : "${project.version}",
                 "Implementation-Title"    : "ilikewoodxbiomesoplenty",
-                "Implementation-Version"  : "${version}",
+                "Implementation-Version"  : "${project.version}",
                 "Implementation-Vendor"   : "yamahari",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])

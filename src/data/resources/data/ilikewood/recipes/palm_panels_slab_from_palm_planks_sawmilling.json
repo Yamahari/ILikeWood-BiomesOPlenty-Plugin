@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:palm_planks"
-  },
-  "result": "ilikewood:palm_panels_slab",
-  "count": 2
-}

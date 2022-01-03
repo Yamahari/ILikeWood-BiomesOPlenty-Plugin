@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:cherry_planks"
-  },
-  "result": "ilikewood:cherry_panels_slab",
-  "count": 2
-}

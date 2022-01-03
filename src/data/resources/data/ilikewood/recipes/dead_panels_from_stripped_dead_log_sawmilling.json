@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:stripped_dead_log"
-  },
-  "result": "ilikewood:dead_panels",
-  "count": 4
-}

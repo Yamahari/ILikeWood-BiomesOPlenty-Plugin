@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:cherry_log"
-  },
-  "result": "ilikewood:cherry_panels",
-  "count": 4
-}

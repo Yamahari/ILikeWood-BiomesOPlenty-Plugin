@@ -27,3 +27,6 @@ forge*changelog.txt
 /logs/
 /src/main/resources/assets/biomesoplenty/
 /src/main/resources/.cache/
+/src/data/resources/.cache/
+/src/data/resources/assets/
+/src/data/resources/data/

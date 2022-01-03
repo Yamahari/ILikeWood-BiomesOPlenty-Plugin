@@ -1,8 +1,0 @@
-{
-  "type": "ilikewood:sawmilling",
-  "ingredient": {
-    "item": "biomesoplenty:stripped_redwood_log"
-  },
-  "result": "ilikewood:stripped_redwood_post",
-  "count": 2
-}
