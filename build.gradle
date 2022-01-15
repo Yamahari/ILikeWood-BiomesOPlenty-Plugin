@@ -79,6 +79,7 @@ dependencies {
     ilikewood fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}")
 
     runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${version_mc}-${version_bop}:universal")
+    runtimeOnly fg.deobf("build.libs:TerraBlender:${version_mc}-${version_terra_blender}")
 }
 
 minecraft {
@@ -89,6 +90,8 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             mods {
                 ilikewoodxbiomesoplenty {
@@ -101,6 +104,8 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             mods {
                 ilikewoodxbiomesoplenty {
@@ -114,6 +119,9 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             property 'ilikewood.datagen.modid', 'biomesoplenty'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            
             args '--mod', 'ilikewood',
                     '--all',
                     '--output', file('src/data/resources/'),
