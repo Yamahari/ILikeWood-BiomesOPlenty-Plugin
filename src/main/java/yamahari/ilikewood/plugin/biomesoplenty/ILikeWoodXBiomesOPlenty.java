@@ -1,4 +1,4 @@
-package yamahari.ilikewood.plugin;
+package yamahari.ilikewood.plugin.biomesoplenty;
 
 import net.minecraftforge.fml.common.Mod;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
