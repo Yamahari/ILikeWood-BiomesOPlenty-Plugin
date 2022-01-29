@@ -23,6 +23,16 @@ repositories {
     flatDir {
         dir 'build/libs'
     }
+    maven {
+        // location of the maven that hosts JEI files
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.k-4u.nl"
+    }
 }
 
 sourceSets {
@@ -78,6 +88,8 @@ dependencies {
 
     ilikewood fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}")
 
+    runtimeOnly fg.deobf("mezz.jei:jei-${version_mc}:${version_jei}")
+
     runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${version_mc}-${version_bop}:universal")
     runtimeOnly fg.deobf("build.libs:TerraBlender:${version_mc}-${version_terra_blender}")
 }
@@ -124,7 +136,7 @@ minecraft {
             
             args '--mod', 'ilikewood',
                     '--all',
-                    '--output', file('src/data/resources/'),
+                    '--output', file('src/data/resources/ilikewood_resources'),
                     '--existing', file('src/main/resources/'),
                     '--existing', configurations.ilikewood.asPath,
                     '--existing-mod', 'biomesoplenty'
