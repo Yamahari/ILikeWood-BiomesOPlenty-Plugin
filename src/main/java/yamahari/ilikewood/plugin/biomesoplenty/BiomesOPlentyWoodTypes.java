@@ -1,6 +1,5 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
-import com.mojang.blaze3d.platform.NativeImage;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
 import yamahari.ilikewood.registry.woodtype.DefaultWoodType;
 import yamahari.ilikewood.registry.woodtype.IWoodType;
@@ -121,8 +120,8 @@ public final class BiomesOPlentyWoodTypes {
     private BiomesOPlentyWoodTypes() {
     }
 
-    private static int color(final int r, final int g, final int b) {
-        return NativeImage.combine(0xFF, b, g, r);
+    private static int color(int r, int g, int b) {
+        return 255 << 24 | (b & 255) << 16 | (g & 255) << 8 | (r & 255);
     }
 
     private static IWoodType makeWoodType(final String name, final int[] colors) {
@@ -130,9 +129,7 @@ public final class BiomesOPlentyWoodTypes {
     }
 
     public static Stream<IWoodType> get() {
-        return Stream.of(BiomesOPlentyWoodTypes.CHERRY,
-            BiomesOPlentyWoodTypes.DEAD,
-            BiomesOPlentyWoodTypes.FIR,
+        return Stream.of(BiomesOPlentyWoodTypes.CHERRY, BiomesOPlentyWoodTypes.DEAD, BiomesOPlentyWoodTypes.FIR,
             BiomesOPlentyWoodTypes.HELLBARK,
             BiomesOPlentyWoodTypes.JACARANDA,
             BiomesOPlentyWoodTypes.MAGIC,

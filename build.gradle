@@ -76,17 +76,11 @@ classes.configure {
     dependsOn(replaceVersions)
 }
 
-configurations {
-    ilikewood
-    runtimeOnly.extendsFrom(ilikewood)
-}
-
 dependencies {
     minecraft "net.minecraftforge:forge:${version_mc}-${version_forge}"
 
     compileOnly fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}:api")
-
-    ilikewood fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}")
+    runtimeOnly fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}")
 
     runtimeOnly fg.deobf("mezz.jei:jei-${version_mc}:${version_jei}")
 
@@ -138,7 +132,7 @@ minecraft {
                     '--all',
                     '--output', file('src/data/resources/ilikewood_resources'),
                     '--existing', file('src/main/resources/'),
-                    '--existing', configurations.ilikewood.asPath,
+                    '--existing-mod', 'ilikewood',
                     '--existing-mod', 'biomesoplenty'
 
             mods {
