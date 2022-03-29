@@ -41,7 +41,7 @@ sourceSets {
             srcDirs = ['src/main/java']
         }
         resources {
-            srcDirs = ['src/main/resources', 'src/data/resources']
+            srcDirs = ['src/main/resources', 'src/data/resources/data', 'src/data/resources/textures']
         }
     }
 }
