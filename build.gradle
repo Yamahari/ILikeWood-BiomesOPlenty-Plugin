@@ -82,9 +82,9 @@ dependencies {
     compileOnly fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}:api")
     runtimeOnly fg.deobf("build.libs:ilikewood:${version_mc}-${version_ilw}")
 
-    runtimeOnly fg.deobf("mezz.jei:jei-${version_mc}:${version_jei}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${version_mc}-forge:${version_jei}")
 
-    runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${version_mc}-${version_bop}:universal")
+    runtimeOnly fg.deobf("build.libs:BiomesOPlenty:${version_mc}-${version_bop}")
     runtimeOnly fg.deobf("build.libs:TerraBlender:${version_mc}-${version_terra_blender}")
 }
 
