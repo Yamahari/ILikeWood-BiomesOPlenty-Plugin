@@ -7,15 +7,6 @@ import yamahari.ilikewood.registry.woodtype.IWoodType;
 import java.util.stream.Stream;
 
 public final class BiomesOPlentyWoodTypes {
-    public static final IWoodType CHERRY = makeWoodType(Constants.CHERRY, new int[]{
-        color(79, 18, 17),
-        color(96, 22, 21),
-        color(115, 26, 24),
-        color(119, 41, 32),
-        color(125, 42, 34),
-        color(132, 42, 37),
-        color(139, 46, 44),
-        color(146, 48, 44)});
 
     public static final IWoodType DEAD = makeWoodType(Constants.DEAD, new int[]{
         color(77, 72, 67),
@@ -129,7 +120,9 @@ public final class BiomesOPlentyWoodTypes {
     }
 
     public static Stream<IWoodType> get() {
-        return Stream.of(BiomesOPlentyWoodTypes.CHERRY, BiomesOPlentyWoodTypes.DEAD, BiomesOPlentyWoodTypes.FIR,
+        return Stream.of(
+            BiomesOPlentyWoodTypes.DEAD,
+            BiomesOPlentyWoodTypes.FIR,
             BiomesOPlentyWoodTypes.HELLBARK,
             BiomesOPlentyWoodTypes.JACARANDA,
             BiomesOPlentyWoodTypes.MAGIC,

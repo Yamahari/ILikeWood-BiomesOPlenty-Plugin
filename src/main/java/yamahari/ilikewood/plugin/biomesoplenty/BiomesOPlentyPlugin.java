@@ -1,11 +1,16 @@
 package yamahari.ilikewood.plugin.biomesoplenty;
 
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import yamahari.ilikewood.ILikeWoodPlugin;
 import yamahari.ilikewood.IModPlugin;
 import yamahari.ilikewood.plugin.biomesoplenty.util.Constants;
 import yamahari.ilikewood.registry.IWoodenObjectRegistry;
+import yamahari.ilikewood.registry.IWoodenTieredItemRegistry;
 import yamahari.ilikewood.registry.objecttype.WoodenBlockType;
+import yamahari.ilikewood.registry.objecttype.WoodenEntityType;
+import yamahari.ilikewood.registry.objecttype.WoodenItemType;
 import yamahari.ilikewood.registry.resource.IWoodenResourceRegistry;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTierRegistry;
 import yamahari.ilikewood.registry.woodtype.IWoodTypeRegistry;
@@ -13,6 +18,10 @@ import yamahari.ilikewood.registry.woodtype.IWoodTypeRegistry;
 @ILikeWoodPlugin
 public final class BiomesOPlentyPlugin implements IModPlugin {
     public static IWoodenObjectRegistry<Block, WoodenBlockType> BLOCK_REGISTRY;
+    public static IWoodenObjectRegistry<Item, WoodenItemType> ITEM_REGISTRY;
+    public static IWoodenObjectRegistry<Item, WoodenBlockType> BLOCK_ITEM_REGISTRY;
+    public static IWoodenTieredItemRegistry TIERED_ITEM_REGISTRY;
+    public static IWoodenObjectRegistry<EntityType<?>, WoodenEntityType> ENTITY_TYPES;
 
     @Override
     public String getModId() {
@@ -31,17 +40,7 @@ public final class BiomesOPlentyPlugin implements IModPlugin {
 
     @Override
     public void registerWoodenItemTiers(final IWoodenItemTierRegistry registry) {
-        registry.register(BiomesOPlentyWoodenItemTiers.CHERRY);
-        registry.register(BiomesOPlentyWoodenItemTiers.DEAD);
-        registry.register(BiomesOPlentyWoodenItemTiers.FIR);
-        registry.register(BiomesOPlentyWoodenItemTiers.HELLBARK);
-        registry.register(BiomesOPlentyWoodenItemTiers.JACARANDA);
-        registry.register(BiomesOPlentyWoodenItemTiers.MAGIC);
-        registry.register(BiomesOPlentyWoodenItemTiers.MAHOGANY);
-        registry.register(BiomesOPlentyWoodenItemTiers.PALM);
-        registry.register(BiomesOPlentyWoodenItemTiers.REDWOOD);
-        registry.register(BiomesOPlentyWoodenItemTiers.UMBRAN);
-        registry.register(BiomesOPlentyWoodenItemTiers.WILLOW);
+        BiomesOPlentyWoodenItemTiers.get().forEach(registry::register);
     }
 
     @Override
@@ -57,5 +56,25 @@ public final class BiomesOPlentyPlugin implements IModPlugin {
     @Override
     public void acceptBlockRegistry(final IWoodenObjectRegistry<Block, WoodenBlockType> registry) {
         BLOCK_REGISTRY = registry;
+    }
+
+    @Override
+    public void acceptItemRegistry(final IWoodenObjectRegistry<Item, WoodenItemType> registry) {
+        ITEM_REGISTRY = registry;
+    }
+
+    @Override
+    public void acceptBlockItemRegistry(final IWoodenObjectRegistry<Item, WoodenBlockType> registry) {
+        BLOCK_ITEM_REGISTRY = registry;
+    }
+
+    @Override
+    public void acceptEntityTypeRegistry(final IWoodenObjectRegistry<EntityType<?>, WoodenEntityType> registry) {
+        ENTITY_TYPES = registry;
+    }
+
+    @Override
+    public void acceptTieredItemRegistry(final IWoodenTieredItemRegistry registry) {
+        TIERED_ITEM_REGISTRY = registry;
     }
 }

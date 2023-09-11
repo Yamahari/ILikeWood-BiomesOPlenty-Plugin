@@ -6,9 +6,9 @@ import yamahari.ilikewood.registry.objecttype.WoodenBlockType;
 import yamahari.ilikewood.registry.woodenitemtier.DefaultWoodenItemTier;
 import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTier;
 import yamahari.ilikewood.registry.woodtype.IWoodType;
+import java.util.stream.Stream;
 
 public final class BiomesOPlentyWoodenItemTiers {
-    public static final IWoodenItemTier CHERRY = makeItemTier(BiomesOPlentyWoodTypes.CHERRY, Constants.CHERRY);
     public static final IWoodenItemTier DEAD = makeItemTier(BiomesOPlentyWoodTypes.DEAD, Constants.DEAD);
     public static final IWoodenItemTier FIR = makeItemTier(BiomesOPlentyWoodTypes.FIR, Constants.FIR);
     public static final IWoodenItemTier HELLBARK = makeItemTier(BiomesOPlentyWoodTypes.HELLBARK, Constants.HELLBARK);
@@ -28,5 +28,9 @@ public final class BiomesOPlentyWoodenItemTiers {
             Constants.BOP_MOD_ID,
             name,
             () -> Ingredient.of(BiomesOPlentyPlugin.BLOCK_REGISTRY.getObject(woodType, WoodenBlockType.PANELS)));
+    }
+
+    public static Stream<IWoodenItemTier> get() {
+        return Stream.of(DEAD, FIR, HELLBARK, JACARANDA, MAGIC, MAHOGANY, PALM, REDWOOD, UMBRAN, WILLOW);
     }
 }
