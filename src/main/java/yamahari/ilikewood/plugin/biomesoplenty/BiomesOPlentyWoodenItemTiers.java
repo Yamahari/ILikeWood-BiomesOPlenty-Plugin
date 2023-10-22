@@ -8,7 +8,6 @@ import yamahari.ilikewood.registry.woodenitemtier.IWoodenItemTier;
 import yamahari.ilikewood.registry.woodtype.IWoodType;
 
 public final class BiomesOPlentyWoodenItemTiers {
-    public static final IWoodenItemTier CHERRY = makeItemTier(BiomesOPlentyWoodTypes.CHERRY, Constants.CHERRY);
     public static final IWoodenItemTier DEAD = makeItemTier(BiomesOPlentyWoodTypes.DEAD, Constants.DEAD);
     public static final IWoodenItemTier FIR = makeItemTier(BiomesOPlentyWoodTypes.FIR, Constants.FIR);
     public static final IWoodenItemTier HELLBARK = makeItemTier(BiomesOPlentyWoodTypes.HELLBARK, Constants.HELLBARK);

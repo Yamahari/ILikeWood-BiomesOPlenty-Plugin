@@ -31,7 +31,6 @@ public final class BiomesOPlentyPlugin implements IModPlugin {
 
     @Override
     public void registerWoodenItemTiers(final IWoodenItemTierRegistry registry) {
-        registry.register(BiomesOPlentyWoodenItemTiers.CHERRY);
         registry.register(BiomesOPlentyWoodenItemTiers.DEAD);
         registry.register(BiomesOPlentyWoodenItemTiers.FIR);
         registry.register(BiomesOPlentyWoodenItemTiers.HELLBARK);

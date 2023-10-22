@@ -3,7 +3,6 @@ package yamahari.ilikewood.plugin.biomesoplenty.util;
 public final class Constants {
     public static final String MOD_ID = "ilikewoodxbiomesoplenty";
     public static final String BOP_MOD_ID = "biomesoplenty";
-    public static final String CHERRY = "cherry";
     public static final String DEAD = "dead";
     public static final String FIR = "fir";
     public static final String HELLBARK = "hellbark";
